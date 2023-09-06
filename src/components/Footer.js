@@ -20,8 +20,8 @@ function Footer() {
             </ul>
         </div>
         <div className="footer-info">
-          <p>123 Main Street, City</p>
-          <p>Phone: +1 (123) 456-7890</p>
+          <p>221b Baker Street, London</p>
+          <p>Phone: +44 (123) 456-7890</p>
           <p>Email: info@littlelemon.com</p>
           <p>&copy; 2023 Little Lemon Restaurant</p>
         </div>
