@@ -3,8 +3,8 @@ import '../styles/Homepage.css';
 
 // Import your images
 import greekSaladImage from '../assets/greek-salad.jpg';
-import strawberrySaladImage from '../assets/strawberry-salad.jpg';
-import cheesyPizzaImage from '../assets/cheesy-pizza.jpg';
+import vegetableSaladImage from '../assets/vegetable-salad.jpg';
+import cheesePizzaImage from '../assets/cheese-pizza.jpg';
 import lemonDessertImage from '../assets/lemon-dessert.jpg';
 
 import restaurantImage1 from '../assets/restaurant.jpg';
@@ -36,19 +36,19 @@ function Homepage() {
           <p className="highlight-price">$15.99</p>
         </div>
         <div className="highlight">
-          <img src={strawberrySaladImage} alt="Dish 2" className="highlight-image" />
-          <h3 className="highlight-name">Strawberry Salad</h3>
+          <img src={vegetableSaladImage} alt="Dish 2" className="highlight-image" />
+          <h3 className="highlight-name">Vegetable Salad</h3>
           <p className="highlight-description">
-            The Strawberry Salad is a delightful mix of fresh strawberries, crisp greens, candied pecans, and a 
-            delicate vinaigrette. It's a symphony of sweet and savory flavors that make each bite a joy.
+            Enjoy a crisp and colorful vegetable salad that combines the freshest garden greens with a medley of seasonal
+            vegetables, tossed in a light and zesty vinaigrette dressing. A healthy and refreshing choice.
           </p>
           <p className="highlight-price">$25.99</p>
         </div>
         <div className="highlight">
-          <img src={cheesyPizzaImage} alt="Dish 3" className="highlight-image" />
-          <h3 className="highlight-name">Cheesy Pizza</h3>
+          <img src={cheesePizzaImage} alt="Dish 3" className="highlight-image" />
+          <h3 className="highlight-name">Cheesse Pizza</h3>
           <p className="highlight-description">
-            Our Cheesy Pizza is a cheesy paradise for pizza lovers. Loaded with a generous layer of mozzarella and 
+            Our Cheesse Pizza is a cheesy paradise for pizza lovers. Loaded with a generous layer of mozzarella and
             cheddar cheese, it's a mouthwatering masterpiece that satisfies cravings and leaves you craving for more.
           </p>
           <p className="highlight-price">$24.99</p>
@@ -57,12 +57,12 @@ function Homepage() {
           <img src={lemonDessertImage} alt="Dish 4" className="highlight-image" />
           <h3 className="highlight-name">Lemon Dessert</h3>
           <p className="highlight-description">
-            Indulge in our Lemon Dessert, a zesty and sweet treat that perfectly balances citrusy goodness 
+            Indulge in our Lemon Dessert, a zesty and sweet treat that perfectly balances citrusy goodness
             with a luscious, melt-in-your-mouth texture. It's the ideal conclusion to a delectable meal.
           </p>
           <p className="highlight-price">$18.99</p>
         </div>
-        
+
         <a href="/menu" className="highlights-button">View Menu</a>
       </section>
 
