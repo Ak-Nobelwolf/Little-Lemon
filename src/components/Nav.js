@@ -42,6 +42,7 @@ function Nav() {
           <li><a href="/reservations">Reservations</a></li>
           <li><a href="/order-online">Order Online</a></li>
           <li><a href="/login">Login</a></li>
+          <li><a href="/book-table">Book a Table</a></li>
         </ul>
       </div>
     </nav>
