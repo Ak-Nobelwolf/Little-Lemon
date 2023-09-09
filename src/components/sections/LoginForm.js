@@ -1,6 +1,6 @@
 // Login.js
 import React, { useState } from 'react';
-import '../../styles/sections/LoginForm.css'; // Import your CSS file
+import '../../styles/sections/LoginForm.css';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -17,7 +17,7 @@ function Login() {
       return;
     }
 
-    // Add your login logic here (for demonstration, we'll just set isLoggedIn to true)
+    // Add login logic here (for demonstration, we'll just set isLoggedIn to true)
     setIsLoggedIn(true);
   };
 

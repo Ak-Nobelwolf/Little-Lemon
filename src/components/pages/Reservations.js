@@ -1,6 +1,6 @@
 // Reservations.js
 import React from 'react';
-import BookingForm from '../sections/BookingForm';
+import Main from '../sections/Main';
 import '../../styles/pages/Reservations.css';
 
 function Reservations() {
@@ -8,7 +8,7 @@ function Reservations() {
     <div >
       <h1 className="reservation-title">Make a Reservation</h1>
       <p className="reservation-description">Fill out the form below to book a table.</p>
-        <BookingForm />
+        <Main />
         <div className="important-notes">
           <ul>
             <li>Please provide accurate details for your reservation.</li>

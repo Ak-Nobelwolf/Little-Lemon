@@ -1,6 +1,6 @@
 // OrderOnline.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link } from 'react-router-dom';
 import '../../styles/pages/OrderOnline.css';
 
 function OrderOnline() {

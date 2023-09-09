@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import '../../styles/sections/BookingForm.css';
 
-function BookingForm() {
+function BookingForm({ availableTimes, dispatch }) {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('17:00');
   const [guests, setGuests] = useState(1);
@@ -13,10 +13,6 @@ function BookingForm() {
   const [phone, setPhone] = useState('');
   const [submitted, setSubmitted] = useState(false); // Track form submission
 
-  const [availableTimes] = useState([
-    '17:00', '18:00', '19:00', '20:00', '21:00', '22:00'
-  ]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here (you can perform API calls, validations, etc.)
@@ -25,11 +21,20 @@ function BookingForm() {
     setSubmitted(true);
   };
 
+  const handleDateChange = (e) => {
+    const newDate = e.target.value;
+    setDate(newDate);
+
+    // Dispatch the state change with the new date
+    dispatch({ type: 'UPDATE_TIMES', date: newDate });
+  };
+
   return (
     <div className="booking-container">
       {submitted ? (
         <div className="success-message">
-          Reservation successful! We look forward to seeing you.
+          Reservation successful! A confirmation message has been sent to your email,
+          we look forward to seeing you.
         </div>
       ) : (
         <form className="booking-form" onSubmit={handleSubmit}>
@@ -75,7 +80,7 @@ function BookingForm() {
             type="date"
             id="res-date"
             value={date}
-            onChange={(e) => setDate(e.target.value)}
+            onChange={handleDateChange}
             required
           />
 
