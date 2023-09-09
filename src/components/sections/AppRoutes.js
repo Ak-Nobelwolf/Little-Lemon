@@ -2,13 +2,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Homepage from './Homepage'; // Import your Homepage component
-import About from './About'; // Import your About component
-import Menu from './Menu'; // Import your Menu component
-import Reservations from './Reservations'; // Import your Reservations component
-import OrderOnline from './OrderOnline'; // Import your OrderOnline component
-import Login from './Login'; // Import your Login component
-import BookingPage from './BookingForm';
+import Homepage from '../pages/Homepage';
+import About from '../pages/About';
+import Menu from '../pages/Menu';
+import Reservations from '../pages/Reservations';
+import OrderOnline from '../pages/OrderOnline';
+import Login from '../pages/Login';
 
 function AppRoutes() {
   return (
@@ -20,7 +19,6 @@ function AppRoutes() {
         <Route path="/reservations" element={<Reservations />} />
         <Route path="/order-online" element={<OrderOnline />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/book-table" element={<BookingPage />} />
       </Routes>
     </BrowserRouter>
   );

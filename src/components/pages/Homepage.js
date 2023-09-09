@@ -1,16 +1,16 @@
 import React from 'react';
-import '../styles/Homepage.css';
+import '../../styles/pages/Homepage.css';
 
 // Import your images
-import greekSaladImage from '../assets/greek-salad.jpg';
-import vegetableSaladImage from '../assets/vegetable-salad.jpg';
-import cheesePizzaImage from '../assets/cheese-pizza.jpg';
-import lemonDessertImage from '../assets/lemon-dessert.jpg';
+import greekSaladImage from '../../assets/greek-salad.jpg';
+import vegetableSaladImage from '../../assets/vegetable-salad.jpg';
+import cheesePizzaImage from '../../assets/cheese-pizza.jpg';
+import lemonDessertImage from '../../assets/lemon-dessert.jpg';
 
-import restaurantImage1 from '../assets/restaurant.jpg';
-import restaurantImage2 from '../assets/Mario and Adrian A.jpg';
-import restaurantImage3 from '../assets/Mario and Adrian b.jpg';
-import restaurantImage4 from '../assets/restaurant chef B.jpg';
+import restaurantImage1 from '../../assets/restaurant.jpg';
+import restaurantImage2 from '../../assets/Mario and Adrian A.jpg';
+import restaurantImage3 from '../../assets/Mario and Adrian b.jpg';
+import restaurantImage4 from '../../assets/restaurant chef B.jpg';
 
 function Homepage() {
   return (
@@ -95,9 +95,9 @@ function Homepage() {
       <section className="about">
         <h2 className="about-title">About Us</h2>
         <p className="about-text">
-        Welcome to Little Lemon Restaurant, where exceptional cuisine meets warm hospitality. Located in the heart of our vibrant city, we've been delighting diners with our carefully 
-        crafted dishes since our humble beginnings. Our dedication to using fresh, locally-sourced ingredients ensures that every meal is a culinary masterpiece. Whether you're 
-        celebrating a special occasion or simply enjoying a night out, our welcoming ambiance and attentive staff are here to make your dining experience unforgettable. 
+        Welcome to Little Lemon Restaurant, where exceptional cuisine meets warm hospitality. Located in the heart of our vibrant city, we've been delighting diners with our carefully
+        crafted dishes since our humble beginnings. Our dedication to using fresh, locally-sourced ingredients ensures that every meal is a culinary masterpiece. Whether you're
+        celebrating a special occasion or simply enjoying a night out, our welcoming ambiance and attentive staff are here to make your dining experience unforgettable.
         Thank you for choosing Little Lemon Restaurant as your culinary destination; we can't wait to serve you!
         </p>
         <div className="about-images">

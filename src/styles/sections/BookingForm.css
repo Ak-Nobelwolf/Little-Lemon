@@ -1,12 +1,10 @@
 /* BookingForm.css */
 .booking-form {
     display: grid;
-    max-width: 400px;
-    gap: 20px;
+    width:300px;
+    gap: 10px;
     margin-left:auto;
     margin-right:auto;
-    margin-top: 50px;
-    margin-bottom: 10px;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 5px;
@@ -18,9 +16,19 @@
   }
 
   .booking-form input[type="date"],
-  .booking-form select,
+  .booking-form input[type="text"],
+  .booking-form input[type="email"],
+  .booking-form input[type="tel"],
   .booking-form input[type="number"] {
-    width: calc(100% - 22px);
+    width: 280px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .booking-form select{
+    width: 298px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;

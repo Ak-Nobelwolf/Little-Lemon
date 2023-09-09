@@ -1,6 +1,6 @@
 // Footer.js
 import React from 'react';
-import logo from '../Logo.svg';
+import logo from '../../assets/Logo.svg';
 
 function Footer() {
   return (
