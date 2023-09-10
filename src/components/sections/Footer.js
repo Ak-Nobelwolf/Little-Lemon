@@ -1,41 +1,47 @@
 // Footer.js
-import React from 'react';
-import logo from '../../assets/Logo.svg';
+import { Link } from "react-router-dom";
+import footerlogo from '../../assets/footer-logo.png';
+import '../../styles/sections/Footer.css';
 
-function Footer() {
+export default function Footer() {
   return (
     <footer>
-      <div className="footer-content">
-        <div className="footer-logo">
-            <img src={logo} alt="Footer Logo" />
-        </div>
-        <div className="footer-links">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/menu">Menu</a></li>
-                <li><a href="/reservations">Reservations</a></li>
-                <li><a href="/order-online">Order Online</a></li>
-                <li><a href="/login">Login</a></li>
-            </ul>
-        </div>
-        <div className="footer-info">
-          <p>221b Baker Street, London</p>
-          <p>Phone: +44 (123) 456-7890</p>
-          <p>Email: info@littlelemon.com</p>
-          <p>&copy; 2023 Little Lemon Restaurant</p>
-        </div>
-        <div className="footer-social">
-          <p>Follow Us:</p>
-          <ul>
-            <li><a href="https://facebook.com">Facebook</a></li>
-            <li><a href="https://twitter.com">Twitter</a></li>
-            <li><a href="https://instagram.com">Instagram</a></li>
+      <menu>
+        <li className="img-footer">
+          <Link to="/"><img className="nav-footer-image" src={footerlogo} alt="Little Lemon logo" /></Link>
+        </li>
+
+        <li>
+          <h1 className="footer-header">Navigation</h1>
+          <ul className="footer-links">
+            <Link to="/">Home</Link>
+            <Link to="/about-us">About</Link>
+            <Link to="/menu">Menu</Link>
+            <Link to="/reservations">Reservations</Link>
+            <Link to="/order-online">Order</Link>
+            <Link to="/login">Login</Link>
           </ul>
-        </div>
-      </div>
+        </li>
+
+        <li>
+          <h1 className="footer-header">Contact Us</h1>
+          <ul className="footer-links">
+            <li>221b Baker Street, London</li>
+            <li>Phone: +44 (123) 456-7890</li>
+            <li>Email: info@littlelemon.com</li>
+            <li>&copy; 2023 Little Lemon Restaurant</li>
+          </ul>
+        </li>
+
+        <li>
+          <h1 className="footer-header">Connect with Us</h1>
+          <ul className="footer-links">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter </a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          </ul>
+        </li>
+      </menu>
     </footer>
   );
 }
-
-export default Footer;

@@ -1,15 +1,18 @@
-
+//App.js
 import './App.css';
-import Nav from './components/sections/Nav';
+import Navbar from './components/sections/Navbar';
 import AppRoutes from './components/sections/AppRoutes';
 import Footer from './components/sections/Footer';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Nav />
-      <AppRoutes />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <AppRoutes />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
