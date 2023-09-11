@@ -1,6 +1,6 @@
 // Reservations.js
 import React from 'react';
-import BookingSlot from '../sections/BookingSlot';
+import BookingSlot from '../sections/orderonline/BookingSlot';
 import '../../styles/pages/Reservations.css';
 
 function Reservations() {

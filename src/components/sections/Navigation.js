@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Navlogo from '../../assets/nav-logo.png';
-import '../../styles/sections/Navbar.css';
 
 export default function Navigation(props) {
   return (

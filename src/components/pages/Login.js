@@ -1,6 +1,6 @@
 // Login.js
 import React from 'react';
-import LoginForm from '../sections/LoginForm';
+import LoginForm from '../sections/login/LoginForm';
 import '../../styles/pages/Login.css';
 
 function Login() {
