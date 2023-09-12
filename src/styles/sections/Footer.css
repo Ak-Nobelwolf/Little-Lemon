@@ -1,5 +1,5 @@
 /* FOOTER STYLING */
-footer {
+  footer {
     min-height: 13rem;
     background-color: #495e57;
     color: #ffffff;
@@ -10,6 +10,8 @@ footer {
 
   footer > menu {
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom:-15px;
+    margin-top:-15px;
   }
 
   .footer-header {
@@ -81,11 +83,41 @@ footer {
       display:block;
       text-align:center;
       margin-right:45px;
+      font-size:1.3rem;
     }
 
     .footer-header{
       display:block;
       text-align:center;
       margin-right:45px;
+      font-size:1.8rem;
+    }
+  }
+
+  /* Media query for larger screens */
+  @media (min-width: 1025px) {
+    footer > menu {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav-footer-image{
+      display:block;
+      max-width: 100%;
+      height: auto;
+      margin-right:40px;
+    }
+
+    .footer-links > Link, .footer-links > li, .footer-links > a{
+      display:block;
+      text-align:center;
+      margin-right:45px;
+      font-size:1.3rem;
+    }
+
+    .footer-header{
+      display:block;
+      text-align:center;
+      margin-right:45px;
+      font-size:1.8rem;
     }
   }

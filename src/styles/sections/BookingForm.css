@@ -50,3 +50,21 @@
   .booking-form input[type="submit"]:hover {
     background-color: #555;
   }
+
+  @media screen and (max-width: 320px){
+    .booking-form {
+      width: 250px;
+    }
+
+    .booking-form input[type="date"], .booking-form input[type="text"], .booking-form input[type="email"], .booking-form input[type="tel"], .booking-form input[type="number"] {
+      width: 230px;
+    }
+
+    .booking-form select {
+      width: 252px;
+    }
+
+    .booking-form input[type="submit"] {
+      margin-left: 20px;
+    }
+  }
