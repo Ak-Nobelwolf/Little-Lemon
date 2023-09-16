@@ -1,8 +1,10 @@
 // BookingForm.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import {fetchAPI} from '../../../BookingAPI';
 import '../../../styles/sections/BookingForm.css';
 
-function BookingForm({ availableTimes, dispatch }) {
+
+function BookingForm({ dispatch,submitForm}) {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('17:00');
   const [guests, setGuests] = useState(1);
@@ -11,32 +13,56 @@ function BookingForm({ availableTimes, dispatch }) {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [submitted, setSubmitted] = useState(false); // Track form submission
+  const [setSubmitted] = useState(false); // Track form submission
+  const [availableTimes, setAvailableTimes] = useState([]); // Store available times
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    // Fetch available times when the date changes
+    if (date) {
+      // Call the API function to fetch available times
+      fetchAPI(date)
+        .then((times) => {
+          setAvailableTimes(times);
+        })
+        .catch((error) => {
+          console.error('Error fetching available times:', error);
+          setAvailableTimes([]); // Reset available times on error
+        });
+    }
+  }, [date]);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle form submission logic here (you can perform API calls, validations, etc.)
 
-    // For now, just set a flag to indicate successful submission
-    setSubmitted(true);
-  };
+    try {
+      // Call the submitForm function passed as a prop
+      const success = await submitForm({
+        date,
+        time,
+        guests,
+        occasion,
+        firstName,
+        lastName,
+        email,
+        phone,
+      });
 
-  const handleDateChange = (e) => {
-    const newDate = e.target.value;
-    setDate(newDate);
-
-    // Dispatch the state change with the new date
-    dispatch({ type: 'UPDATE_TIMES', date: newDate });
+      if (success) {
+        // If the submission is successful, set the submitted state to true
+        setSubmitted(true);
+      } else {
+        // Handle submission failure, if needed
+        console.error('Booking submission failed.');
+      }
+    } catch (error) {
+      // Handle API call errors, if needed
+      console.error('Error submitting booking:', error);
+    }
   };
 
   return (
     <div className="booking-container">
-      {submitted ? (
-        <div className="success-message">
-          Reservation successful! A confirmation message has been sent to your email,
-          we look forward to seeing you.
-        </div>
-      ) : (
         <form className="booking-form" onSubmit={handleSubmit}>
           <label htmlFor="first-name">First Name</label>
           <input
@@ -74,13 +100,12 @@ function BookingForm({ availableTimes, dispatch }) {
             required
           />
 
-
           <label htmlFor="res-date">Choose Date</label>
           <input
             type="date"
             id="res-date"
             value={date}
-            onChange={handleDateChange}
+            onChange={(e) => setDate(e.target.value)}
             required
           />
 
@@ -125,7 +150,7 @@ function BookingForm({ availableTimes, dispatch }) {
 
           <input type="submit" value="Make Your Reservation" />
         </form>
-      )}
+      )
     </div>
   );
 }

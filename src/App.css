@@ -653,7 +653,7 @@ Link:link {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px){
   .about-us {
     grid-template-columns: repeat(2, 1fr);
     grid-gap:40px;
@@ -719,26 +719,34 @@ Link:link {
 @media screen and (min-width: 2560px) {
   .about-us {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap:40px;
-    margin-bottom:15px;
+    grid-gap: 0px;
+    margin-bottom: 15px;
+    padding: 1.25rem 5rem 2.5rem 5rem;
+    min-height: 38rem;
   }
 
   .about-heading{
-    margin:10px 0px -10px 0px;
+    margin:10px 0px -10px -100px;
   }
 
   .about-heading>h1 {
-    font-size: 3.3rem;
+    font-size: 4.0rem;
+    margin-left: 100px;
   }
 
   .about-heading> h2{
-    font-size: 2.6rem;
+    font-size: 3.2rem;
+    margin-left: 100px;
     margin-top: 40px;
     margin-bottom: 25px;
   }
 
   .about-subtext {
-    font-size:x-large;
+    font-size:xx-large;
+    margin-top: -1.5rem;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 100px;
   }
 
   .about-image {
@@ -766,17 +774,12 @@ Link:link {
     margin-bottom: 10px;
   }
 
-  .hero-image {
-    max-height: auto;
-    padding-left: 5rem;
-  }
-
   .hero-image img {
-    max-width: 25%;
-    height: auto;
-    object-fit: cover;
+    max-width: 21%;
+    height: 23%;
+    object-fit: contain;
     border-radius: 10px;
     position: absolute;
-    margin-left: 390px;
+    margin-left: 485px;
   }
 }
