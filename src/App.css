@@ -525,11 +525,10 @@ Link:link {
 
   .hero-image img {
     width: 45%;
-    height: 37%;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 44%;
     margin-left: -70px;
     position: absolute;
+    margin-top: 58px;
   }
 
   .about-us {
