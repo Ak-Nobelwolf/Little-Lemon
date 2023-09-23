@@ -193,7 +193,7 @@ Link:link {
 }
 
 /* MEDIA QUERIES*/
-@media screen and (max-width: 320px){
+/* @media screen and (max-width: 320px){
   .call-to-action{
   grid-template-columns: repeat(1, 1fr);
   }
@@ -313,9 +313,9 @@ Link:link {
     margin-left: 0.5rem;
   }
 
-}
+} */
 
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .call-to-action{
   grid-template-columns: repeat(1, 1fr);
   }
@@ -437,7 +437,7 @@ Link:link {
 
 }
 
-@media screen and (min-width: 426px) and (max-width: 599px) {
+/* @media screen and (min-width: 426px) and (max-width: 599px) {
   .hero-text {
     margin-left:0px;
   }
@@ -514,10 +514,10 @@ Link:link {
     margin-left: 0.5rem;
   }
 
-}
+} */
 
 /* Small screens */
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .hero-text {
     margin-left:20px;
     margin-bottom:10px
@@ -525,10 +525,10 @@ Link:link {
 
   .hero-image img {
     width: 45%;
-    height: 44%;
+    height: 35%;
     margin-left: -70px;
     position: absolute;
-    margin-top: 58px;
+    margin-top: 20px;
   }
 
   .about-us {
@@ -644,11 +644,12 @@ Link:link {
 
   .hero-image img {
     max-width: 40%;
-    height: 40%;
+    height: 37%;
     object-fit: cover;
-    position:absolute;
+    position: absolute;
     margin-left: -60px;
     border-radius: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -715,13 +716,13 @@ Link:link {
   }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1441px) and (max-width: 2560px){
   .about-us {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px;
     margin-bottom: 15px;
     padding: 1.25rem 5rem 2.5rem 5rem;
-    min-height: 38rem;
+    min-height: 43rem;
   }
 
   .about-heading{
@@ -741,10 +742,10 @@ Link:link {
   }
 
   .about-subtext {
-    font-size:xx-large;
+    font-size:27px;
     margin-top: -1.5rem;
     text-align: justify;
-    margin-left: 25px;
+    margin-left: 100px;
     margin-right: 100px;
   }
 
@@ -768,17 +769,14 @@ Link:link {
   }
 
   .subsection {
-    font-size:x-large;
+    font-size: 28px;
     margin-top:-20px;
     margin-bottom: 10px;
   }
 
   .hero-image img {
-    max-width: 21%;
-    height: 23%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    position: absolute;
-    margin-left: 485px;
   }
 }

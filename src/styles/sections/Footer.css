@@ -95,7 +95,7 @@
   }
 
   /* Media query for larger screens */
-  @media (min-width: 1025px) {
+  @media (min-width: 1025px) and (max-width: 1440px) {
     footer > menu {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -119,5 +119,30 @@
       text-align:center;
       margin-right:45px;
       font-size:1.8rem;
+    }
+  }
+
+  @media screen and (min-width: 1441px) and (max-width: 2560px){
+    .img-footer .nav-footer-image {
+      max-height: 13rem;
+      padding: 0.5rem;
+  }
+
+    footer > menu {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-links > Link, .footer-links > li, .footer-links > a{
+      display:block;
+      text-align:center;
+      margin-right:45px;
+      font-size:27px;
+    }
+
+    .footer-header{
+      display:block;
+      text-align:center;
+      margin-right:45px;
+      font-size:27px;
     }
   }
