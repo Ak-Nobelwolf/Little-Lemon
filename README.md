@@ -2,9 +2,9 @@
 
 Welcome to the Little Lemon Restaurant website project! This web application was built using React and is designed to showcase the menu and features of our delightful restaurant.
 
-![Little Lemon Restaurant](https://example.com/restaurant-image.jpg)
+![Little Lemon Restaurant](./public/images/homepage1.jpg)
 
-**Live Demo**: [Little Lemon Restaurant](https://your-deployed-website-url.com)
+**Live Demo**: [Little Lemon Restaurant](https://ak-nobelwolf.github.io/Little-Lemon/)
 
 ## Project Overview
 
@@ -22,21 +22,29 @@ The Little Lemon Restaurant website provides customers with an easy-to-navigate 
 
 Here are some snapshots of the website to give you a glimpse of what to expect:
 
-![Homepage](https://example.com/homepage-screenshot.jpg)
+![Homepage](./public/images/homepage1.jpg)(./public/images/homepage2.jpg)(./public/images/homepage3.jpg)(./public/images/homepage4.jpg)
 
 *Homepage*
 
-![Menu](https://example.com/menu-screenshot.jpg)
+![About Us](./public/images/about.jpg)
+
+*About Us Page*
+
+![Menu](./public/images/menu.jpg)
 
 *Menu Page*
 
-![Reservations](https://example.com/reservations-screenshot.jpg)
+![Reservations](./public/images/reservations1.jpg)(./public/images/reservations2.jpg)
 
 *Reservations Page*
 
-![About Us](https://example.com/about-us-screenshot.jpg)
+![Order Online](./public/images/Order-online.jpg)
 
-*About Us Page*
+*Order Online Page*
+
+![Login](./public/images/login.jpg)
+
+*Login Page*
 
 ## Getting Started
 
@@ -53,6 +61,8 @@ This project was developed using the following technologies:
 
 ## Feedback and Contributions
 
-We welcome your feedback and contributions to make the Little Lemon Restaurant website even better. If you have suggestions, found a bug, or want to contribute, please feel free to [create an issue](https://github.com/your-username/little-lemon-restaurant/issues) or [submit a pull request](https://github.com/your-username/little-lemon-restaurant/pulls) on our GitHub repository.
+I welcome your feedback and suggestions to make the Little Lemon Restaurant website even better.
 
-Thank you for visiting the Little Lemon Restaurant website. We hope you enjoy your experience!
+If you have any issues , please feel free to [create an issue](https://github.com/Ak-Nobelwolf/Little-Lemon/issues) on my GitHub repository.
+
+Thank you for visiting the Little Lemon Restaurant website. I hope you enjoy your experience!
