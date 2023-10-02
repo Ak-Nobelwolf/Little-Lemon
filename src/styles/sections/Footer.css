@@ -4,8 +4,8 @@
     background-color: #495e57;
     color: #ffffff;
     padding-bottom: 1rem;
-    bottom: 0; /* Place the footer at the bottom of the viewport */
     width: 100%; /* Make the footer span the full width of the viewport */
+    bottom: 0; /* Place the footer at the bottom of the viewport */
   }
 
   footer > menu {

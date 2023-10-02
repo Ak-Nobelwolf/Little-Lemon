@@ -8,13 +8,13 @@ export default function Footer() {
     <footer>
       <menu>
         <li className="img-footer">
-          <Link to="/"><img className="nav-footer-image" src={footerlogo} alt="Little Lemon logo" /></Link>
+          <Link to="/homepage"><img className="nav-footer-image" src={footerlogo} alt="Little Lemon logo" /></Link>
         </li>
 
         <li>
           <h1 className="footer-header">Navigation</h1>
           <ul className="footer-links">
-            <Link to="/">Home</Link>
+            <Link to="/homepage">Home</Link>
             <Link to="/about-us">About</Link>
             <Link to="/menu">Menu</Link>
             <Link to="/reservations">Reservations</Link>
