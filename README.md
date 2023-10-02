@@ -22,7 +22,13 @@ The Little Lemon Restaurant website provides customers with an easy-to-navigate 
 
 Here are some snapshots of the website to give you a glimpse of what to expect:
 
-![Homepage](./public/images/homepage1.jpg)(./public/images/homepage2.jpg)(./public/images/homepage3.jpg)(./public/images/homepage4.jpg)
+![Homepage 1](./public/images/homepage1.jpg)
+
+![Homepage 2](./public/images/homepage2.jpg)
+
+![Homepage 3](./public/images/homepage3.jpg)
+
+![Homepage 4](./public/images/homepage4.jpg)
 
 *Homepage*
 
@@ -34,7 +40,9 @@ Here are some snapshots of the website to give you a glimpse of what to expect:
 
 *Menu Page*
 
-![Reservations](./public/images/reservations1.jpg)(./public/images/reservations2.jpg)
+![Reservations 1](./public/images/reservations1.jpg)
+
+![Reservations 2](./public/images/reservations2.jpg)
 
 *Reservations Page*
 
