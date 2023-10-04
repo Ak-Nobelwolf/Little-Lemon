@@ -13,7 +13,7 @@ import AboutUs from '../pages/AboutUs';
 function AppRoutes() {
   return (
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route exactpath="/" element={<Homepage />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/reservations" element={<Reservations />} />

@@ -1,7 +1,8 @@
 /* OrderOnline.css */
   .order-online-container {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    margin-bottom: 5rem;
   }
 
   .order-online-container h1 {
@@ -33,3 +34,12 @@
   .order-button:hover {
     background-color: #555;
   }
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+  .order-online-container {
+    /* text-align: center; */
+    padding: 50px;
+    margin-top: 6rem;
+    margin-bottom: 11.9rem;
+  }
+}

@@ -1,8 +1,7 @@
  /* LoginForm.css */
  .login-container {
     width: 285px;
-    margin: 2rem auto;
-    margin-bottom: 30px;
+    margin: 4rem auto;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 5px;
@@ -67,5 +66,15 @@
 
     .login-button, .forgot-password-button {
       margin-right: 7.7px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px){
+    .Login-title {
+      margin-top: 5rem;
+  }
+    .login-container {
+      margin-top: 3.5rem;
+      margin-bottom: 10.6rem;
     }
   }

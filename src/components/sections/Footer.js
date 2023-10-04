@@ -24,21 +24,21 @@ export default function Footer() {
         </li>
 
         <li>
+          <h1 className="footer-header">Connect with Us</h1>
+          <ul className="footer-links">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter </a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          </ul>
+        </li>
+
+        <li>
           <h1 className="footer-header">Contact Us</h1>
           <ul className="footer-links">
             <li>221b Baker Street, London</li>
             <li>Phone: +44 (123) 456-7890</li>
             <li>Email: info@littlelemon.com</li>
             <li>&copy; 2023 Little Lemon Restaurant</li>
-          </ul>
-        </li>
-
-        <li>
-          <h1 className="footer-header">Connect with Us</h1>
-          <ul className="footer-links">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
           </ul>
         </li>
       </menu>
