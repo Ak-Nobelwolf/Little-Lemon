@@ -1,6 +1,6 @@
 //App.js
 import './App.css';
-import {BrowserRouter, Route, Routes } from 'react-router-dom';
+import {BrowserRouter,Route, Routes } from 'react-router-dom';
 import Navbar from './components/sections/Navbar';
 import Homepage from './components/pages/Homepage';
 import Menu from './components/pages/Menu';
@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route index element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/reservations" element={<Reservations />} />
